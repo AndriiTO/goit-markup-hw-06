@@ -73,6 +73,7 @@
           </svg>
         </button>
       </div>
+      <!-- mobile menu -->
       <div class="mobile-menu">
         <div class="mobile-menu-conteiner container">
           <button class="mobile-menu-button" type="button">
@@ -191,17 +192,40 @@
         </div>
       </section>
       <!--team-->
-      <section class="team hiden">
+      <section class="team">
         <div class="container">
           <h2 class="team-title">Our Team</h2>
           <ul class="team-list">
             <li class="team-list-point">
-              <img
-                src="./images/Squoosh/img.jpg"
-                alt="avatar Mark Guerrero"
-                width="264"
-                height="260"
-              />
+              <picture>
+                <source
+                  media="(min-width: 1158px)"
+                  srcset="
+                    ./images/Squoosh/team1-desk-min.jpg    1x,
+                    ./images/Squoosh/team1-desk@2x-min.jpg 2x
+                  "
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/Squoosh/team1-tab-min.jpg    1x,
+                    ./images/Squoosh/team1-tab@2x-min.jpg 2x
+                  "
+                />
+                <source
+                  media="(max-width: 767px)"
+                  srcset="
+                    ./images/Squoosh/team1-mob-min.jpg    1x,
+                    ./images/Squoosh/team1-mob@2x-min.jpg 2x
+                  "
+                />
+                <img
+                  src="./images/Squoosh/team1-desk-min.jpg"
+                  alt="avatar Mark Guerrero"
+                  width="264"
+                  height="260"
+                />
+              </picture>
               <div class="team-text-conteiner">
                 <h3 class="team-list-title">Mark Guerrero</h3>
                 <p class="team-list-text">Product Designer</p>
@@ -239,12 +263,35 @@
             </li>
 
             <li class="team-list-point">
-              <img
-                src="./images/Squoosh/img-1.jpg"
-                alt="avatar Tom Ford"
-                width="264"
-                height="260"
-              />
+              <picture>
+                <source
+                  media="(min-width: 1158px)"
+                  srcset="
+                    ./images/Squoosh/team2-desk-min.jpg    1x,
+                    ./images/Squoosh/team2-desk@2x-min.jpg 2x
+                  "
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/Squoosh/team2-tab-min.jpg    1x,
+                    ./images/Squoosh/team2-tab@2x-min.jpg 2x
+                  "
+                />
+                <source
+                  media="(max-width: 767px)"
+                  srcset="
+                    ./images/Squoosh/team2-mob-min.jpg    1x,
+                    ./images/Squoosh/team2-mob@2x-min.jpg 2x
+                  "
+                />
+                <img
+                  src="./images/Squoosh/img-1.jpg"
+                  alt="avatar Tom Ford"
+                  width="264"
+                  height="260"
+                />
+              </picture>
               <div class="team-text-conteiner">
                 <h3 class="team-list-title">Tom Ford</h3>
                 <p class="team-list-text">Frontend Developer</p>
@@ -281,12 +328,35 @@
               </div>
             </li>
             <li class="team-list-point">
-              <img
-                src="./images/Squoosh/img-2.jpg"
-                width="264"
-                height="260"
-                alt="avatar Camila Garcia"
-              />
+              <picture>
+                <source
+                  media="(min-width: 1158px)"
+                  srcset="
+                    ./images/Squoosh/team3-desk-min.jpg    1x,
+                    ./images/Squoosh/team3-desk@2x-min.jpg 2x
+                  "
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/Squoosh/team3-tab-min.jpg    1x,
+                    ./images/Squoosh/team3-tab@2x-min.jpg 2x
+                  "
+                />
+                <source
+                  media="(max-width: 767px)"
+                  srcset="
+                    ./images/Squoosh/team3-mob-min.jpg    1x,
+                    ./images/Squoosh/team3-mob@2x-min.jpg 2x
+                  "
+                />
+                <img
+                  src="./images/Squoosh/img-2.jpg"
+                  width="264"
+                  height="260"
+                  alt="avatar Camila Garcia"
+                />
+              </picture>
               <div class="team-text-conteiner">
                 <h3 class="team-list-title">Camila Garcia</h3>
                 <p class="team-list-text">Marketing</p>
@@ -323,12 +393,35 @@
               </div>
             </li>
             <li class="team-list-point">
-              <img
-                src="./images/Squoosh/img-3.jpg"
-                width="264"
-                height="260"
-                alt="avatar Daniel Wilson"
-              />
+              <picture>
+                <source
+                  media="(min-width: 1158px)"
+                  srcset="
+                    ./images/Squoosh/team4-desk-min.jpg    1x,
+                    ./images/Squoosh/team4-desk@2x-min.jpg 2x
+                  "
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/Squoosh/team4-tab-min.jpg    1x,
+                    ./images/Squoosh/team4-tab@2x-min.jpg 2x
+                  "
+                />
+                <source
+                  media="(max-width: 767px)"
+                  srcset="
+                    ./images/Squoosh/team4-mob-min.jpg    1x,
+                    ./images/Squoosh/team4-mob@2x-min.jpg 2x
+                  "
+                />
+                <img
+                  src="./images/Squoosh/img-3.jpg"
+                  width="264"
+                  height="260"
+                  alt="avatar Daniel Wilson"
+                />
+              </picture>
               <div class="team-text-conteiner">
                 <h3 class="team-list-title">Daniel Wilson</h3>
                 <p class="team-list-text">UI Designer</p>
@@ -368,18 +461,42 @@
         </div>
       </section>
       <!--portfolio-->
-      <section class="porfolio hiden">
+      <section class="porfolio">
         <div class="container">
           <h2 class="portfolio-title">Our Portfolio</h2>
           <ul class="portfolio-list">
             <li class="portfolio-list-point">
               <div class="portfolio-img">
-                <img
-                  src="./images/Squoosh/imgportfolio5.jpg"
-                  alt="banking"
-                  width="360"
-                  height="300"
-                />
+                <picture>
+                  <source
+                    media="(min-width: 1158px)"
+                    srcset="
+                      ./images/Squoosh/portfolio1-desk-min.jpg    1x,
+                      ./images/Squoosh/portfolio1-desk@2x-min.jpg 1x
+                    "
+                  />
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="
+                      /images/Squoosh/portfolio1-tab-min.jpg     1x,
+                      ./images/Squoosh/portfolio1-tab@2x-min.jpg 2x
+                    "
+                  />
+                  <source
+                    media="(max-width: 767px)"
+                    srcset="
+                      ./images/Squoosh/prtfolio1-mob-min.jpg    1x,
+                      ./images/Squoosh/prtfolio1-mob@2x-min.jpg 2x
+                    "
+                  />
+                  <img
+                    src="./images/Squoosh/prtfolio1-mob-min.jpg"
+                    alt="banking"
+                    width="360"
+                    height="300"
+                  />
+                </picture>
+
                 <p class="porfolio-overlay">
                   14 Stylish and User-Friendly App Design Concepts · Task
                   Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App
@@ -394,12 +511,36 @@
             </li>
             <li class="portfolio-list-point">
               <div class="portfolio-img">
-                <img
-                  src="./images/Squoosh/imgportfolio4.jpg"
-                  alt="cashless payment"
-                  width="360"
-                  height="300"
-                />
+                <picture>
+                  <source
+                    media="(min-width: 1158px)"
+                    srcset="
+                      ./images/Squoosh/portfolio2-desk-min.jpg    1x,
+                      ./images/Squoosh/portfolio2-desk@2x-min.jpg 1x
+                    "
+                  />
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="
+                      /images/Squoosh/portfolio2-tab-min.jpg     1x,
+                      ./images/Squoosh/portfolio2-tab@2x-min.jpg 2x
+                    "
+                  />
+                  <source
+                    media="(max-width: 767px)"
+                    srcset="
+                      ./images/Squoosh/prtfolio2-mob-min.jpg    1x,
+                      ./images/Squoosh/prtfolio2-mob@2x-min.jpg 2x
+                    "
+                  />
+                  <img
+                    src="./images/Squoosh/prtfolio2-mob-min.jpg"
+                    alt="banking"
+                    width="360"
+                    height="300"
+                  />
+                </picture>
+
                 <p class="porfolio-overlay">
                   14 Stylish and User-Friendly App Design Concepts · Task
                   Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App
@@ -412,14 +553,38 @@
                 <div class="portfolio-list-text">Marketing</div>
               </div>
             </li>
+
             <li class="portfolio-list-point">
               <div class="portfolio-img">
-                <img
-                  src="./images/Squoosh/imgportfolio3.jpg"
-                  alt="meditation app"
-                  width="360"
-                  height="300"
-                />
+                <picture>
+                  <source
+                    media="(min-width: 1158px)"
+                    srcset="
+                      ./images/Squoosh/portfolio3-desk-min.jpg    1x,
+                      ./images/Squoosh/portfolio3-desk@2x-min.jpg 1x
+                    "
+                  />
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="
+                      /images/Squoosh/portfolio3-tab-min.jpg     1x,
+                      ./images/Squoosh/portfolio3-tab@2x-min.jpg 2x
+                    "
+                  />
+                  <source
+                    media="(max-width: 767px)"
+                    srcset="
+                      ./images/Squoosh/prtfolio3-mob-min.jpg    1x,
+                      ./images/Squoosh/prtfolio3-mob@2x-min.jpg 2x
+                    "
+                  />
+                  <img
+                    src="./images/Squoosh/prtfolio3-mob-min.jpg"
+                    alt="banking"
+                    width="360"
+                    height="300"
+                  />
+                </picture>
                 <p class="porfolio-overlay">
                   14 Stylish and User-Friendly App Design Concepts · Task
                   Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App
@@ -432,14 +597,38 @@
                 <p class="portfolio-list-text">App</p>
               </div>
             </li>
+
             <li class="portfolio-list-point">
               <div class="portfolio-img">
-                <img
-                  src="./images/Squoosh/imgportfolio2.jpg"
-                  alt="taxi service"
-                  width="360"
-                  height="300"
-                />
+                <picture>
+                  <source
+                    media="(min-width: 1158px)"
+                    srcset="
+                      ./images/Squoosh/portfolio4-desk-min.jpg    1x,
+                      ./images/Squoosh/portfolio4-desk@2x-min.jpg 1x
+                    "
+                  />
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="
+                      /images/Squoosh/portfolio4-tab-min.jpg     1x,
+                      ./images/Squoosh/portfolio4-tab@2x-min.jpg 2x
+                    "
+                  />
+                  <source
+                    media="(max-width: 767px)"
+                    srcset="
+                      ./images/Squoosh/prtfolio4-mob-min.jpg    1x,
+                      ./images/Squoosh/prtfolio4-mob@2x-min.jpg 2x
+                    "
+                  />
+                  <img
+                    src="./images/Squoosh/prtfolio4-mob-min.jpg"
+                    alt="banking"
+                    width="360"
+                    height="300"
+                  />
+                </picture>
                 <p class="porfolio-overlay">
                   14 Stylish and User-Friendly App Design Concepts · Task
                   Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App
@@ -452,14 +641,38 @@
                 <p class="portfolio-list-text">Marketing</p>
               </div>
             </li>
+
             <li class="portfolio-list-point">
               <div class="portfolio-img">
-                <img
-                  src="./images/Squoosh/imgportfolio1.jpg"
-                  alt="screen illustrations"
-                  width="360"
-                  height="300"
-                />
+                <picture>
+                  <source
+                    media="(min-width: 1158px)"
+                    srcset="
+                      ./images/Squoosh/portfolio5-desk-min.jpg    1x,
+                      ./images/Squoosh/portfolio5-desk@2x-min.jpg 1x
+                    "
+                  />
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="
+                      /images/Squoosh/portfolio5-tab-min.jpg     1x,
+                      ./images/Squoosh/portfolio5-tab@2x-min.jpg 2x
+                    "
+                  />
+                  <source
+                    media="(max-width: 767px)"
+                    srcset="
+                      ./images/Squoosh/prtfolio5-mob-min.jpg    1x,
+                      ./images/Squoosh/prtfolio5-mob@2x-min.jpg 2x
+                    "
+                  />
+                  <img
+                    src="./images/Squoosh/prtfolio5-mob-min.jpg"
+                    alt="banking"
+                    width="360"
+                    height="300"
+                  />
+                </picture>
                 <p class="porfolio-overlay">
                   14 Stylish and User-Friendly App Design Concepts · Task
                   Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App
@@ -472,14 +685,38 @@
                 <p class="portfolio-list-text">Design</p>
               </div>
             </li>
+
             <li class="portfolio-list-point">
               <div class="portfolio-img">
-                <img
-                  src="./images/Squoosh/imgportfolio.jpg"
-                  alt="online courses"
-                  width="360"
-                  height="300"
-                />
+                <picture>
+                  <source
+                    media="(min-width: 1158px)"
+                    srcset="
+                      ./images/Squoosh/portfolio6-desk-min.jpg    1x,
+                      ./images/Squoosh/portfolio6-desk@2x-min.jpg 1x
+                    "
+                  />
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="
+                      /images/Squoosh/portfolio6-tab-min.jpg     1x,
+                      ./images/Squoosh/portfolio6-tab@2x-min.jpg 2x
+                    "
+                  />
+                  <source
+                    media="(max-width: 767px)"
+                    srcset="
+                      ./images/Squoosh/prtfolio6-mob-min.jpg    1x,
+                      ./images/Squoosh/prtfolio6-mob@2x-min.jpg 2x
+                    "
+                  />
+                  <img
+                    src="./images/Squoosh/prtfolio6-mob-min.jpg"
+                    alt="banking"
+                    width="360"
+                    height="300"
+                  />
+                </picture>
                 <p class="porfolio-overlay">
                   14 Stylish and User-Friendly App Design Concepts · Task
                   Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App
