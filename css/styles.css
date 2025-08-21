@@ -66,17 +66,18 @@ button {
 }
 /* cammon */
 .container {
-  width: 100%;
+  max-width: 320px;
   padding: 0 16px;
   margin: 0 auto;
 }
 @media screen and (min-width: 768px) {
   .container {
-    width: 100%;
+    max-width: 768px;
   }
 }
 @media screen and (min-width: 1158px) {
   .container {
+    min-width: 1158px;
     padding: 0 15px;
   }
 }
@@ -248,7 +249,7 @@ button {
 .mobile-menu-conteiner {
   display: flex;
   flex-direction: column;
-  height: auto;
+  height: 100%;
   position: relative;
   padding-top: 72px;
   padding-bottom: 40px;
@@ -340,7 +341,7 @@ button {
 /* Effective Solutions */
 /* не зрозумів чого ширина 320пкс а не 100%? */
 .first-section {
-  width: 100%;
+  min-width: 152px;
   height: auto;
   background-color: #2e2f42;
   background-position: center;
@@ -423,6 +424,8 @@ button {
   display: none;
 }
 .strategy-title-list {
+  display: flex;
+  text-align: start;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.11;
@@ -621,10 +624,10 @@ button {
   transform: translateY(0);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-/* .portfolio-list-point:hover {
+.portfolio-list-point:hover {
   box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
     0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
-} */
+}
 .portfolio-list-point:hover .porfolio-overlay {
   transform: translateY(0);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -704,7 +707,7 @@ button {
 }
 /* footer */
 .foot {
-  width: 100%;
+  max-width: 767px;
   background-color: #2e2f42;
   padding-top: 96px;
   padding-bottom: 96px;
@@ -712,12 +715,15 @@ button {
   justify-content: center;
 }
 .foot .container {
+  display: flex;
+  flex-wrap: wrap;
   padding-right: 16px;
   padding-left: 16px;
 }
 .logo-footer {
   color: #4d5ae5;
-  display: inline-block;
+  display: flex;
+  justify-content: center;
   font-weight: 700;
   font-size: 18px;
   text-transform: uppercase;
@@ -738,11 +744,17 @@ button {
 }
 
 .footer-social {
-  width: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
   height: auto;
 }
 
 .footer-social .footer-social-text {
+  display: flex;
+  justify-content: center;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
@@ -836,15 +848,19 @@ button {
 @media screen and (min-width: 768px) {
   .foot {
     min-width: 768px;
+    max-width: none;
   }
   .foot .container {
+    width: 100%;
     display: flex;
-    margin: 0 auto;
-    padding-right: 16px;
-    padding-left: 16px;
+    margin: 96px auto;
     flex-wrap: wrap;
-
+    justify-content: center;
+    align-items: center;
     column-gap: 24px;
+  }
+  .footer-social {
+    margin: 0;
   }
 
   .logo-footer {
@@ -865,14 +881,19 @@ button {
   .footer-social-text {
     text-align: start;
   }
+  .footer-text-label {
+    display: block;
+  }
+
   .subscribe-title {
     text-align: start;
   }
-  .subscribe-section {
+  /* .footer-text-label {
     display: flex;
     flex-direction: column;
-  }
-  .subscribe-form {
+    gap: 16px;
+  } */
+  .footer-text-label {
     display: flex;
     flex-direction: row;
     gap: 24px;
@@ -880,9 +901,39 @@ button {
   .subscribe-form-input {
     width: 264px;
   }
-  /* @media screen and (min-width: 1158px) {
-    } */
 }
+
+@media screen and (min-width: 1158px) {
+  .foot {
+    min-width: 1158px;
+    display: flex;
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+  
+  .foot .container {
+    display: flex;
+    width: 1128px;
+    max-width: none;
+    align-items: baseline;
+    justify-content: flex-start;
+    margin: 0;
+    column-gap: 0;
+  }
+  .footer-logo-text{
+    margin-right: 120px;
+  }
+  .logo-footer{
+    justify-content: flex-start;
+   }
+  .footer-social + .subscribe-section {
+  margin-left: auto;}
+  /* .subscribe-section {
+    display: flex; */
+    /* justify-content: flex-end;
+    margin-right: auto;
+  }
+} */
 
 /* backdrop */
 .backdrop {
@@ -1081,7 +1132,7 @@ button {
 .checkbox-svg {
   fill: none;
   display: block;
-  transform: translate(50%, 50%);
+  transform: translate(50% 50%);
 }
 .checkbox-input:checked + .checkbox-lable .custom-checkbox-button {
   background-color: #404bbf;
@@ -1139,4 +1190,4 @@ button {
   }
 }
 
-/* @media screen and (min-width: 1158px); */
+@media screen and (min-width: 1158px);
