@@ -55,7 +55,7 @@ img {
   padding: 0;
   white-space: nowrap;
   clip-path: inset(100%);
-  clip: rect(0 0 0 0);
+  clip: rect(0, 0, 0, 0);
   overflow: hidden;
 }
 button {
@@ -1190,7 +1190,7 @@ button {
 }
 .checkbox-svg {
   display: block;
-  transform: translate(50% 50%);
+  transform: translate(50%, 50%);
 }
 .checkbox-input:checked + .checkbox-lable .custom-checkbox-button {
   background-color: #404bbf;
