@@ -384,7 +384,6 @@ button {
   margin-bottom: 72px;
   margin-left: auto;
   margin-right: auto;
-  max-width: 216px;
 }
 
 .button-section-one {
@@ -418,12 +417,13 @@ button {
         url("../images/Squoosh/peopleoffice/people-office-tab@2x-min.jpg"); /* це x2 */
     }
   }
-}
-.hero-title {
-  font-size: 56px;
-  line-height: 1.07;
-  letter-spacing: 0.02em;
-  margin-bottom: 36px;
+  .hero-title {
+    width: 496px;
+    font-size: 56px;
+    line-height: 1.07;
+    letter-spacing: 0.02em;
+    margin-bottom: 36px;
+  }
 }
 
 @media screen and (min-width: 1158px) {
@@ -450,12 +450,12 @@ button {
         url("../images/Squoosh/peopleoffice/people-office-desk@2x-min.jpg"); /* це x2 */
     }
   }
+  .hero-title {
+    max-width: 496px;
+    margin-bottom: 48px;
+  }
 }
 
-.hero-title {
-  max-width: 496px;
-  margin-bottom: 48px;
-}
 /* featur */
 .featur {
   padding: 96px 0px;
@@ -538,6 +538,9 @@ button {
     bottom: 24px;
     width: 64px;
     height: 64px;
+  }
+  .strategy-text-list {
+    font-weight: 500;
   }
 }
 /* team */
@@ -777,10 +780,10 @@ button {
   padding-left: 16px;
 }
 .footer-logo-text {
-  margin-bottom: 16px;
+  margin-bottom: 72px;
 }
 .logo-footer {
-  font-family: var(--second-family);
+  font-family: "Raleway", sans-serifl;
   color: #4d5ae5;
   display: flex;
   justify-content: center;
@@ -839,6 +842,7 @@ button {
 .team-social-svg {
   fill: #f4f4fd;
 }
+
 .subscribe-title {
   text-align: center;
   font-weight: 500;
@@ -850,6 +854,12 @@ button {
 }
 .subscribe-form {
   text-align: center;
+  gap: 16px;
+}
+.footer-text-label {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
 }
 .subscribe-form-input {
   border: 1px solid #fff;
@@ -903,9 +913,8 @@ button {
 }
 
 @media screen and (min-width: 768px) {
-  .foot {
-    min-width: 768px;
-    max-width: none;
+  .footer-logo-text {
+    margin: 0;
   }
   .foot .container {
     width: 100%;
@@ -924,7 +933,7 @@ button {
   .logo-footer {
     color: #4d5ae5;
     display: flex;
-    text-align: start;
+    justify-content: flex-start;
     font-weight: 700;
     font-size: 18px;
     text-transform: uppercase;
@@ -962,8 +971,8 @@ button {
 
 @media screen and (min-width: 1158px) {
   .foot {
-    min-width: 1158px;
-    display: flex;
+    /* min-width: 1158px;
+    display: flex; */
     padding-top: 100px;
     padding-bottom: 100px;
   }
@@ -971,7 +980,6 @@ button {
   .foot .container {
     align-items: baseline;
     /* justify-content: flex-start; */
-    margin: 0;
     column-gap: 0;
     padding-left: 15px;
   }
